@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Treinamento JS  Ninja</title>
+</head>
+<body>
+	<h1>Anotações de entendimentos</h1>
+	<h2>Aula 1 - Variáveis</h2>
+	<h3>Tipos de variáveis:</h3>
+	<p>
+		<ul>
+				<li>number:<br>
+					integer, float
+				</li>
+				<li>string:<br>
+					conjunto de caracteres dentro de aspas simples '' ou aspas duplas ""
+				</li>
+				<li>boolean:<br>
+					true ou false
+				</li>
+				<li>null:<br>
+					não existe e não tem valor
+				</li>
+				<li>undefined:<br>
+					existe, mas ainda não tem valor definido
+				</li>				
+			</ul>	
+	</p>
+	<h3>Notação para uso de variável:</h3>
+	<p>
+		var nomedavariavel
+		var nomedavariavel = valor
+	</p>
+	<h3>Notação para uso de objeto:</h3>
+	<p>
+		var nomedavariavelqueseraobjeto = {}<br>
+		Objetos possuem propriedades e métodos<br><br>
+		Notação para uso  da propriedade de objeto:<br>
+		var pessoa = {<br>
+		... altura: 1.81,<br>
+		... peso: 95,<br>
+		... cor: "preta"<br>	
+		}<br>
+		RESULTADO:<br>
+		{altura: 1.81, peso: 95, cor: preta}<br>
+		pessoa.altura<br>
+		1.81<br>
+		pessoa.cor<br>
+		"preta"
+	</p>
+	<p>
+		Para atribuir novos valores ao objeto existente basta:<br>
+		chamar o objeto.propriedade = valor<br>
+		pessoa.cor = "pardo"<br>
+		RESULTADO:<br>
+		pessoa.cor<br>
+		"pardo"
+	</p>
+	<h3>Notação para ARRAY (No JS não usaremos arrays. Somente objetos</h3>
+	<p>
+		var numeros = []<br>
+		undefined<br>
+		numeros<br>
+		[]<br>
+		numeros = [1, 2, 3, 4, 5, 6]<br>
+		[ 1,<br>
+		  2,<br>
+		  3,<br>
+		  4,<br>
+		  5,<br>
+		  6 ]<br>
+		  Acessando índice da array:<br>
+		  numeros[0]<br>
+		  1<br>
+		  numeros[1]<br>
+		  2<br>
+		  numeros[5]<br>
+		  6<br>
+		  var pessoa = []<br>
+		  var pessoa.altura = [1.81]<br>
+		  [1.81]<br>
+		  pessoa["altura"]<br>
+		  [1.81]  
+	</p>
+	<h2>Aula 2 - Operadores</h2>	
+	<h3>Aritméticos:</h3>
+	<p>
+		<ul>
+			<li>Adição +</li>
+			<li>Subtração -</li>
+			<li>Multiplicação *</li>
+			<li>Divisão /</li>
+		</ul>
+	</p>
+	<p>var soma = 10 + 10<br>
+		soma<br>
+		20<br>
+		soma = soma - 2<br>
+		18<br>
+		soma = soma * 2<br>
+		36<br>
+		soma = soma / 6<br>
+		6
+	</p>
+	<h3>Aritméticos Abreviados:</h3>
+	<p>
+		++nomevariavel Incrementa antes e já mostra o resultado<br>
+		O valor atual de soma é 6<br>
+		++soma<br>
+		7<br>
+		nomevariavel++ Incrementa depois e só mostra o resultado após chamar a variável<br>
+		soma++<br>
+		7<br>
+		soma<br>
+		8<br>
+	</p>
+	<p>
+		A mesma notação serve para o Decremento --, isto é:<br>
+		--nomevariavel ou nomevariavel--
+	</p>
+	<h3>Outros Aritméticos Abreviados:</h3>
+	<p>
+		O valor de soma atual é 8
+		<ul>
+			<li>+= Mais igual<br>
+				soma += 10<br>
+				18
+			</li>
+			<li>-= Menos igual<br>
+				soma -= 4<br>
+				14	
+			</li>
+			<li>*= Vezes igual<br>
+			soma *=2<br>
+			28
+			</li>
+			<li>/= Dividido igual<br>
+			soma /= 4<br>
+			7
+			</li>
+		</ul>
+	</p>
+	<h2>Aula 3 - Operadores de</h2>
+	<h3>Operadores de Igualdade</h3>	
+	<p>
+		<ul>
+			<li>== Igual a<br>
+				Compara valores e retorna true ou false<br>
+				var x = 0<br>
+				undefined<br>
+				x<br>
+				0<br>
+				x == 0<br>
+				true<br>
+				x == 5<br>
+				false<br>
+				var nome = "joao"<br>
+				undefined<br>
+				nome<br>
+				"joao"<br>
+				nome == "joao"<br>
+				true<br>
+			</li>
+			<li>ATENÇÃO: o JS tenta converter valores para verificar se o valor testado é igual ao outro.<br>Isto se aplica a um valor string testado e comparado a um valor number, por exemplo. Isto acontece devido ao JS ser uma linguagem com tipagem dinâmica.<br>
+			var um = "1"<br>
+			um<br>
+			"1"<br>
+			var numum = 1<br>
+			numum<br>
+			1<br>
+			um == numum<br>
+			true
+			</li>
+			<li>!= Diferente de<br>
+			A mesma notação de igualdade serve para a diferença
+			</li>
+			<li>=== Igual a, e testa se é do mesmo tipo, ou seja, (valor = valor e number = number ou string = string)<br>
+			um  === numum<br>
+			false
+			</li>
+			<li>!== Diferente, mas testa se é do mesmo tipo. A mesma notação de igualdade serve para a diferença<br>
+				um !== numum<br>
+				true
+			</li>				
+		</ul>
+	</p>
+	<h3>Operadores Relacionais</h3>
+	<p>Devemos considerar a variável num.<br>
+		var num = 100<br>
+		undefined<br>
+		num<br>
+		100<br>
+		<ul>
+			<li>Maior que ><br>
+				num > 10<br>
+				true
+			</li>
+			<li>Menor que <<br>
+				num < 5<br>
+				false
+			</li>
+			<li>Marior ou igual a >=<br>
+				num >= 200<br>
+				false
+			</li>
+			<li>Menor ou igual a <=<br>
+				num <= 100<br>
+				true
+			</li>
+		</ul>
+	</p>
+	<h1>
+		<p><a href="https://github.com/ricardochagas/Treinamento-JavaScript/wiki/Desafio1">Desafio 1</a></p>
+	</h1>
+	<h2>Aula 4 - Funções</h2>
+	<h3></h3>
+	<p></p>
+	<p></p>
+	<p></p>
+	<p></p>
+
+</body>
+</html>
