@@ -2,7 +2,7 @@
 
 Lista com todo o conteúdo do treinamento:
 
-[- Variáveis e tipos de dados](https://github.com/ricardochagas/Treinamento-JavaScript/wiki/Vari%C3%A1veis-e-tipos-de-dados)<br>
+[- Variáveis e tipos de dados](https://github.com/ricardochagas/JavaScript/wiki/Vari%C3%A1veis-e-tipos-de-dados)<br>
 [- Operadores aritméticos](https://github.com/ricardochagas/Treinamento-JavaScript/wiki/Operadores-aritm%C3%A9ticos)<br>
 [- Operadores de igualdade e relacionais]()<br>
 [- Funções]()<br>
