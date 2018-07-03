@@ -91,3 +91,36 @@ Lista com todo o conteúdo do treinamento:
 [- Testes (TDD, BDD)]()<br>
 [- Ferramentas para escrever testes]()<br>
 [- Bônus]()
+[- Desafio 1](https://github.com/ricardochagas/JavaScript/tree/master/desafio-01)<br>
+[- Desafio 2](https://github.com/ricardochagas/JavaScript/tree/master/desafio-02)<br>
+[- Desafio 3](https://github.com/ricardochagas/JavaScript/tree/master/desafio-03)<br>
+[- Desafio 4](https://github.com/ricardochagas/JavaScript/tree/master/desafio-04)<br>
+[- Desafio 5](https://github.com/ricardochagas/JavaScript/tree/master/desafio-05)<br>
+[- Desafio 6](https://github.com/ricardochagas/JavaScript/tree/master/desafio-06)<br>
+[- Desafio 7](https://github.com/ricardochagas/JavaScript/tree/master/desafio-07)<br>
+[- Desafio 8](https://github.com/ricardochagas/JavaScript/tree/master/desafio-08)<br>
+[- Desafio 9](https://github.com/ricardochagas/JavaScript/tree/master/desafio-09)<br>
+[- Desafio 10](https://github.com/ricardochagas/JavaScript/tree/master/desafio-10)<br>
+[- Desafio 11](https://github.com/ricardochagas/JavaScript/tree/master/desafio-11)<br>
+[- Desafio 12](https://github.com/ricardochagas/JavaScript/tree/master/desafio-12)<br>
+[- Desafio 13](https://github.com/ricardochagas/JavaScript/tree/master/desafio-13)<br>
+[- Desafio 14](https://github.com/ricardochagas/JavaScript/tree/master/desafio-14)<br>
+[- Desafio 15](https://github.com/ricardochagas/JavaScript/tree/master/desafio-15)<br>
+[- Desafio 16](https://github.com/ricardochagas/JavaScript/tree/master/desafio-16)<br>
+[- Desafio 17](https://github.com/ricardochagas/JavaScript/tree/master/desafio-17)<br>
+[- Desafio 18](https://github.com/ricardochagas/JavaScript/tree/master/desafio-18)<br>
+[- Desafio 19](https://github.com/ricardochagas/JavaScript/tree/master/desafio-19)<br>
+[- Desafio 20](https://github.com/ricardochagas/JavaScript/tree/master/desafio-20)<br>
+[- Desafio 21](https://github.com/ricardochagas/JavaScript/tree/master/desafio-21)<br>
+[- Desafio 22](https://github.com/ricardochagas/JavaScript/tree/master/desafio-22)<br>
+[- Desafio 23](https://github.com/ricardochagas/JavaScript/tree/master/desafio-23)<br>
+[- Desafio 24](https://github.com/ricardochagas/JavaScript/tree/master/desafio-24)<br>
+[- Desafio 25](https://github.com/ricardochagas/JavaScript/tree/master/desafio-25)<br>
+[- Desafio 26](https://github.com/ricardochagas/JavaScript/tree/master/desafio-26)<br>
+[- Desafio 27](https://github.com/ricardochagas/JavaScript/tree/master/desafio-27)<br>
+[- Desafio 28](https://github.com/ricardochagas/JavaScript/tree/master/desafio-28)<br>
+[- Desafio 29](https://github.com/ricardochagas/JavaScript/tree/master/desafio-29)<br>
+[- Desafio 30](https://github.com/ricardochagas/JavaScript/tree/master/desafio-30)<br>
+[- Desafio 31](https://github.com/ricardochagas/JavaScript/tree/master/desafio-31)<br>
+[- Desafio 32](https://github.com/ricardochagas/JavaScript/tree/master/desafio-32)<br>
+[- Desafio 33](https://github.com/ricardochagas/JavaScript/tree/master/desafio-33)
