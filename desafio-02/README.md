@@ -17,7 +17,7 @@ recebeSoma
 65
 
 // Declare uma nova variável, sem valor.
-?
+var valor;
 
 /*
 Crie uma função que adicione um valor à variável criada acima, e retorne a string:
