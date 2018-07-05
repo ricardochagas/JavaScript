@@ -54,6 +54,20 @@ function tresMais(a, b, c) {
     }
 }
 
+/* 
+ VERSÃO DO PROFESSOR
+ AO INVÉS DE VERIFICAR A EXISTÊNCIA DOS VALORES, ELE VERIFICOU SE ALGUM DOS VALORES ERA UNDEFINED
+ OBSERVAR QUE SE A VERIFICAÇÃO DO IF FOR FALSA E HOUVER RETURN NA PRÓXIMA INSTRUÇÃO, NÃO SE FAZ NECESSÁRIO O USO DO ELSE, LOGO...
+*/ 
+
+function tresMaisCorrecao (a, b, c) {
+    if (a === undefined || b === undefined || c === undefined) {
+        return "Preencha todos os valores corretamente!";
+        } // NÃO É NECESSÁRIO O USO DO ELSE AQUI.
+    return (a * b * c) + 2;    
+}
+
+
 // Invoque a função criada acima, passando só dois números como argumento.
 tresMais(1,1)
 
@@ -78,8 +92,33 @@ Crie uma função com as seguintes características:
 5. Se nenhum argumento for passado, retorne o valor booleano `false`.
 6. E ainda, se nenhuma das condições acima forem atendidas, retorne `null`.
 */
-?
+function tresArgumentos (x, y, z) {
+    // VERIFICA SE APENAS 1 ARGUMENTO FOI PASSADO
+ 	if(x !== undefined && y === undefined && z === undefined) {
+		return x;
+    }
+    // VERIFICA SE APENAS 2 ARGUMENTOS FORAM PASSADOS
+	else if(x !== undefined && y !== undefined && z === undefined) {
+		return x + y;	
+	}
+    // VERIFICA SE TODOS OS 3 ARGUMENTOS FORAM PASSADOS
+	else if(x !== undefined && y !== undefined && z !== undefined) {
+		return (x + y) / z;
+    }
+    // VERIFICA SE NENHUM ARGUMENTO FOI PASSADO
+	else if(x === undefined && y === undefined && z === undefined) {
+		return false;
+    }
+	else {
+	return null;
+    }
+}
 
 // Invoque a função acima utilizando todas as possibilidades (com nenhum argumento, com um, com dois e com três.) Coloque um comentário de linha ao lado da função com o resultado de cada invocação.
-?
+
+tresArgumentos(1) // 1
+tresArgumentos(1, 2) // 3
+tresArgumentos(1, 2, 3) // 1
+tresArgumentos() // false
+// NÃO HÁ CONDIÇÃO PARA EXECUTAR A VERIFICAÇÃO COM RESULTADO NULL
 ```
