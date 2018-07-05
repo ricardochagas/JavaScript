@@ -4,13 +4,17 @@ Nesse exercício, você está livre para escolher os nomes para suas variáveis 
 
 ```js
 // Crie uma função que receba dois argumentos e retorne a soma dos mesmos.
-?
+function soma(a, b) {
+return a + b;
+}
 
 // Declare uma variável que receba a invocação da função criada acima, passando dois números quaisquer por argumento, e somando `5` ao resultado retornado da função.
-?
+var recebeSoma - soma(20, 40) + 5;
+recebeSoma
+65
 
 // Qual o valor atualizado dessa variável?
-?
+65
 
 // Declare uma nova variável, sem valor.
 ?
@@ -20,13 +24,20 @@ Crie uma função que adicione um valor à variável criada acima, e retorne a s
     O valor da variável agora é VALOR.
 Onde VALOR é o novo valor da variável.
 */
-?
+function novoValor() {
+    valor = 10;
+    return "O valor da variável agora é " + valor;
+}
 
 // Invoque a função criada acima.
-?
+novoValor()
 
 // Qual o retorno da função? (Use comentários de bloco).
-?
+'O valor da variável agora é 10'
+/*
+Estranhamente, o valor da função veio como string concatenado à frase,
+mas funcionou
+*/
 
 /*
 Crie uma função com as seguintes características:
@@ -35,19 +46,28 @@ Crie uma função com as seguintes características:
     Preencha todos os valores corretamente!
 3. O retorno da função deve ser a multiplicação dos 3 argumentos, somando `2` ao resultado da multiplicação.
 */
-?
+function tresMais(a, b, c) {
+    if(a, b, c) {
+        return (a * b * c) + 2;
+    } else {
+        return "Preencha todos os valores corretamente!";
+    }
+}
 
 // Invoque a função criada acima, passando só dois números como argumento.
-?
+tresMais(1,1)
 
 // Qual o resultado da invocação acima? (Use comentários para mostrar o valor retornado).
-?
+'Preencha todos os valores corretamente!'
+/*
+como faltou passar um argumento, retornou a string.
+*/
 
 // Agora invoque novamente a função criada acima, mas passando todos os três argumentos necessários.
-?
+tresMais(1,1,5)
 
 // Qual o resultado da invocação acima? (Use comentários para mostrar o valor retornado).
-?
+// 7
 
 /*
 Crie uma função com as seguintes características:
