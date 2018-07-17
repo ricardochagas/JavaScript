@@ -139,6 +139,31 @@ mostrar quantos assentos ainda podem ser ocupados, com a frase:
 - Se couber somente mais uma pessoa, mostrar a palavra "pessoa" no retorno
 citado acima, no lugar de "pessoas".
 */
+
+carro.adicionarPessoas = function(entradaPassageiros) {
+    carro.quantidadePessoas += entradaPassageiros;
+    return 'Já temos ' + carro.quantidadePessoas + ' pessoas no carro!'
+
+// VALIDAÇÃO
+
+	if(carro.quantidadePessoas >= carro.assentos) {
+		return 'O carro já está lotado!';
+	}
+	
+	if(carro.quantidadePessoas < carro.assentos && entradaPassageiros + carro.quantidadePessoas > carro.assentos) {
+		var assentosVagos = carro.assentos - carro.quantidadePessoas;
+		var pluralCaber = assentosVagos === 1 ? 'cabe' : 'cabem';
+		var pluralPessoas = assentosVagos === 1 ? 'pessoa' : 'pessoas';
+		return 'Só ' + pluralCaber + ' mais ' + assentosVagos + ' ' + pluralPessoas + '!';
+	}
+	return 'Já temos '+ carro.quantidadePessoas +' pessoas no carro!';
+}; // END
+
+//
+// RESPOSTA ACIMA CONFERIDA E MELHORADA, PORÉM NÃO SOLUCIONA ENTRADA NEGATIVA DE PESSOAS
+// RESPOSTA ABAIXO AMPLIA VALIDAÇÃO, MAS AINDA NÃO SOLUCIONA ENTRADA NEGATIVA DE PESSOAS DE MODO A NÃO CONTABILIZAR O NÚMERO NEGATIVO.
+//
+
 carro.adicionarPessoas = function( entradaDePessoas ) { 
   var totalDePessoas = carro.quantidadePessoas + entradaDePessoas;
 // ---VALIDAÇÕES---
@@ -148,17 +173,29 @@ carro.adicionarPessoas = function( entradaDePessoas ) {
     return 'O carro já está lotado!';
   } 
   //SE AINDA TEM VAGA MOSTRA QUANTIDADE DE VAGAS NO PLURAL OU SINGULAR
-  if ( totalDePessoas > carro.assentos ) {
+  if ( totalDePessoas > carro.assentos && totalDePessoas >= carro.assentos ) {
       var assentosLivres = carro.assentos - carro.quantidadePessoas;
       var conjugaCaber = assentosLivres === 1 ? 'cabe ' : 'cabem';
       var pluralPessoa = assentosLivres === 1 ? 'pessoa' : 'pessoas';
       return 'Só ' + conjugaCaber + ' ' +  assentosLivres +  ' ' + pluralPessoa + '!';
   }
   
+  if ( entradaDePessoas <= 0 && totalDePessoas === 0) {
+	return 'O carro está vazio!';
+  	}
+
   carro.quantidadePessoas += entradaDePessoas;
-  return 'Já temos ' + carro.quantidadePessoas + ' pessoas no carro!';
+
+  if (entradaDePessoas < 0 && carro.quantidadePessoas >= 0 && totalDePessoas < 5 ) {
+			return 'Você não pode deixar a quantidade de pessoas negativa. Já tem ' + carro.quantidadePessoas + ' no carro!';
+	}	
+	
+
   
-}; //END  
+  verificaPessoas = carro.quantidadePessoas === 1 ? 'pessoa' : 'pessoas';  
+  return 'Já temos ' + carro.quantidadePessoas + ' ' + verificaPessoas + ' no carro!';
+    
+}; //END
 
 
 /*
